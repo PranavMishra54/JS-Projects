@@ -1,2 +1,2 @@
 # JS-Projects
-My projects on JS Learning 
+My projects on JS Learning. 
