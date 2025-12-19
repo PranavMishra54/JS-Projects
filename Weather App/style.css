@@ -1,0 +1,76 @@
+  * {
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background 0.5s;
+    }
+
+    /* Backgrounds */
+    .clear { background: linear-gradient(135deg, #56ccf2, #2f80ed); }
+    .clouds { background: linear-gradient(135deg, #bdc3c7, #2c3e50); }
+    .rain { background: linear-gradient(135deg, #4b79a1, #283e51); }
+    .snow { background: linear-gradient(135deg, #e6dada, #274046); }
+    .default { background: linear-gradient(135deg, #667eea, #764ba2); }
+
+    /* Card */
+    #container {
+        background: white;
+        width: 320px;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        text-align: center;
+    }
+
+    /* Input */
+    input {
+        width: 70%;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+    }
+
+    button {
+        padding: 10px 14px;
+        margin-left: 5px;
+        border: none;
+        border-radius: 8px;
+        background: #667eea;
+        color: white;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #5a67d8;
+    }
+
+    /* Result */
+    #result img {
+        width: 90px;
+    }
+
+    .temp {
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    .condition {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .loading {
+        color: gray;
+    }
+
+    .error {
+        color: red;
+        font-weight: bold;
+    }
