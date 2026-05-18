@@ -2,7 +2,7 @@ const input = document.getElementById("cityInput");
 const btn = document.getElementById("searchBtn");
 const result = document.getElementById("result");
 
-const API_KEY = "222b3364b051133901ecee40401b86ad";
+const API_KEY = process.env.API_KEY;
 
 console.log("JS connected");
 
