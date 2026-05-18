@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #e4e46fe2;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+        .project {
+            background-color: #79e3b5c6;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            min-width: 350px;
+        }
+
+        
+        #insert {
+            width: 100%;
+        }
+
+       
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #555;
+            padding: 12px 20px;
+            text-align: center;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        th {
+            background-color: #292929;
+            color: #f0f0f0;
+        }
+
+        td {
+            background-color: #1c1c1c;
+            color: #fff;
+        }
+
+    
+        tr:hover td {
+            background-color: #4CAF50;
+            color: #fff;
+            transform: scale(1.02);
+        }
+
+        
+        .color {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="project">
+      <div id="insert">
+        <div class="key">Press the key and watch magic</div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
