@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlimited Colors</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f8ff;
+            font-family: "Poppins", sans-serif;
+        }
+
+        div {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 40px 60px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: background-color 1s ease, color 1s ease;
+        }
+
+        h1 {
+            color: #333;
+            margin: 10px 0;
+        }
+
+        button {
+            margin: 10px;
+            padding: 12px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        #start {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #stop {
+            background-color: #f44336;
+            color: white;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Want to change the background continuously?</h1>
+        <h1>Click Start!</h1>
+        <button id="start">Start</button>
+        <h1>Want to stop the color change?</h1>
+        <h1>Click Stop!</h1>
+        <button id="stop">Stop</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
