@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batkahi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <h1>All Chats Are Here</h1>
+    <ul>
+        <% chats.forEach(chat => { %>
+            <div class="chat">
+                <p>To: <%= chat.to%></p>
+                <p>From: <%= chat.from%></p>
+                <div class="message">
+                    <p>Message: <%= chat.message%></p>
+                </div>
+                <p>Created At: <%= chat.createdAt%></p>
+            </div>
+        <% }) %>
+    </ul>
+
+</body>
+</html>
