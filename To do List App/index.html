@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo App</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Main container */
+        .todo-container {
+            background: #ffffff;
+            width: 350px;
+            padding: 25px;
+            border-radius: 14px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Heading */
+        .todo-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Input + button row */
+        .todo-container input {
+            width: 72%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            outline: none;
+            font-size: 14px;
+        }
+
+        .todo-container input:focus {
+            border-color: #667eea;
+        }
+
+        .todo-container button {
+            padding: 10px 14px;
+            border: none;
+            border-radius: 8px;
+            background: #667eea;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .todo-container button:hover {
+            background: #5a67d8;
+        }
+
+        /* Task list */
+        #taskList {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        /* Each task */
+        #taskList li {
+            background: #f7f7f7;
+            padding: 10px 12px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: 0.3s;
+        }
+
+        #taskList li:hover {
+            background: #ececec;
+        }
+
+        /* Task text */
+        #taskList li span {
+            flex: 1;
+            margin: 0 10px;
+            cursor: pointer;
+            color: #333;
+        }
+
+        /* Completed task */
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        /* Tick button */
+        #taskList li button:first-child {
+            background: #4caf50;
+            padding: 6px 8px;
+            font-size: 14px;
+        }
+
+        #taskList li button:first-child:hover {
+            background: #43a047;
+        }
+
+        /* Delete button */
+        #taskList li button:last-child {
+            background: #ff4d4d;
+            padding: 6px 8px;
+            font-size: 14px;
+        }
+
+        #taskList li button:last-child:hover {
+            background: #e53935;
+        }
+    </style>
+</head>
+<body>
+
+<div class="todo-container">
+    <h2>Todo List</h2>
+
+    <input type="text" id="taskInput" placeholder="Enter task">
+    <button id="addBtn">Add</button>
+
+    <ul id="taskList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
