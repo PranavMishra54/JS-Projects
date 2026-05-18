@@ -1,0 +1,137 @@
+/* === Global Styles === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #82a0e2, #849dc7ab);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #111827;
+}
+
+/* === Quiz Container === */
+.quiz-container {
+  background: #c3e2e1ca;
+  padding: 40px;
+  border-radius: 25px;
+  width: 85%;
+  max-width: 1000px;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.quiz-container h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #2563EB;
+  font-weight: 700;
+}
+
+/* === Question Section === */
+#question {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+/* === Options === */
+#options {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+#options li {
+  background: #F3F4F6;
+  padding: 18px;
+  margin: 12px 0;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: 2px solid transparent;
+  font-size: 1.3rem;
+}
+
+#options li:hover {
+  background: #FACC15;
+  border-color: #2563EB;
+  transform: scale(1.02);
+}
+
+/* === Next Button === */
+#next-btn {
+  background: #2563EB;
+  color: #fff;
+  padding: 16px 35px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 15px;
+}
+
+#next-btn:hover {
+  background: #1D4ED8;
+}
+
+/* === Score Section === */
+#score {
+  margin-top: 25px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #16A34A;
+}
+
+/* === Animation === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .quiz-container {
+    width: 95%;
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .quiz-container h1 {
+    font-size: 2rem;
+  }
+
+  #question {
+    font-size: 1.2rem;
+  }
+
+  #options li {
+    font-size: 1rem;
+    padding: 14px;
+  }
+
+  #next-btn {
+    font-size: 1rem;
+    padding: 12px 25px;
+  }
+
+  #score {
+    font-size: 1.2rem;
+  }
+}
